@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-family: 'Baloo 2', cursive;
+
+}
+
+#navbar:before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 7;
+    top: 0;
+    left: 0;
+
+
+}
+
+/* Navigation Bar: logo and image */
+#logo {
+    margin: 10px 30px;
+}
+
+#logo img {
+    height: 56px;
+}
+
+/* Navigation Bar: list styling*/
+#navbar ul {
+    display: flex;
+}
+
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+
+/* home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 13px 200px;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home::before {
+    content: "";
+    /*background: url(https://images.unsplash.com/photo-1556269923-e4ef51d69638?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=778&q=80) no-repeat center center/cover;*/
+    background: url(https://images.unsplash.com/photo-1543353071-10c8ba85a904?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80) no-repeat center center/cover;
+    position: absolute;
+    height: 560px;
+    width: 100%;
+    z-index: -1;
+    opacity: .7;
+    top: 0;
+    left: 0;
+
+
+}
+
+
+#home p {
+    color: black;
+    font-family: 'Merriweather', serif;
+
+}
+
+#home h1 {
+    color: black;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+/* Services Section */
+
+#services-container{
+    background: rgb(216, 216, 216);
+    width: 100%;
+    height: 100%;
+
+}
+
+/*
+.services-container::before{
+    content: "";
+    position: absolute;
+    background: url('https://images.unsplash.com/photo-1543353071-087092ec393a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80') no-repeat center center/cover;
+    width: 100%;
+    height: 572px;
+    z-index: -1;
+    opacity: .5;
+}
+*/
+
+#services {
+    margin: 10px;
+    display: flex;
+
+}
+
+
+#services .box {
+    border: 2px solid red;
+    padding: 34px 23px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background: #f2f2f2;
+    margin-bottom: 50px;
+
+
+}
+
+#services img {
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p {
+    font-family: 'Baloo 2', cursive;
+}
+
+/* clients section */
+
+#client-section {
+    position: relative;
+    margin-bottom: 34px;
+    margin-top: -12px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('https://images.unsplash.com/photo-1554998171-89445e31c52b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=939&q=80') no-repeat center center/cover;
+    width: 100%;
+    height: 248px;
+    z-index: -1;
+    opacity: .5;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.client-item {
+    padding: 20px;
+}
+
+#clients img {
+    height: 90px;
+}
+
+/* contact section */
+
+#contact {
+    position: relative;
+
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .5;
+    background: url('https://images.unsplash.com/photo-1534536281715-e28d76689b4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80') no-repeat center center/cover;
+
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: .5rem;
+    border-radius: 10px;
+
+}
+
+#contact-box form{
+    width: 30%;
+    
+}
+
+#contact-box label{
+    font-size: 1.2rem;
+    font-family: 'Baloo 2', cursive;
+
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Utility Classes */
+
+.h-primary {
+    font-family: 'Merriweather', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+
+}
+
+.h-primary1 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.8rem;
+    padding: 12px;
+
+}
+
+.h-secondary {
+    font-family: 'Merriweather', serif;
+    font-size: 1.8rem;
+    padding: 12px;
+
+}
+
+.btn {
+    background: #b3b1b3;
+    background-image: -webkit-linear-gradient(top, #b3b1b3, #030303);
+    background-image: -moz-linear-gradient(top, #b3b1b3, #030303);
+    background-image: -ms-linear-gradient(top, #b3b1b3, #030303);
+    background-image: -o-linear-gradient(top, #b3b1b3, #030303);
+    background-image: linear-gradient(to bottom, #b3b1b3, #030303);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 15px;
+    font-family: 'Baloo 2', cursive;
+    color: white;
+    font-size: 15px;
+    margin: 10px 20px;
+    padding: 6px 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #e8e8e8;
+    background-image: -webkit-linear-gradient(top, #e8e8e8, #878787);
+    background-image: -moz-linear-gradient(top, #e8e8e8, #878787);
+    background-image: -ms-linear-gradient(top, #e8e8e8, #878787);
+    background-image: -o-linear-gradient(top, #e8e8e8, #878787);
+    background-image: linear-gradient(to bottom, #e8e8e8, #878787);
+    text-decoration: none;
+}
+
+.center {
+    text-align: center;
+}
